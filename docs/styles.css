@@ -1,0 +1,365 @@
+/* --------------- TEXT, FONT AND FORMATTING ----------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    font-size: 18px;
+}
+h1 {
+    color: #EEF2F2FF;
+    color:rgb(30, 30, 80);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: cursive, Tahoma, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+h2
+{
+    font-size: 25px;
+    margin-top: 18px;
+}
+#super{  
+    vertical-align: super;  
+    font-size: 12px;  
+}
+/* Formatting */
+.container-margin
+{
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+.row-margin
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.center-align
+{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+.text-align-cnt
+{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.content-frame
+{
+    background-color: rgb(178, 213, 224, 0.5);
+    box-shadow: 5px 5px lightslategray;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/* --------------- IMAGES ----------------------- */
+/* Images */
+.div-img-center
+{
+    text-align: center;
+    align-items: center;
+}
+.footer-img
+{
+    max-width: 10%;
+    padding-bottom: 5px;
+    margin: auto;
+}
+.diver-colored-img
+{
+    max-width: 70%;
+}
+.shell-img
+{
+    height: 2.5%;
+}
+.cartoon-img
+{
+    margin: auto;
+    padding: 10%;
+    max-width: 100%;
+}
+.map-img
+{
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10%;
+}
+.dive-us
+{
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 50%;
+}
+.dolphine
+{
+    max-width: 10%;
+}
+.map-pin
+{
+    max-width: 10%;
+}
+.bottom
+{
+    max-width: 35%;
+}
+
+/* --------------- NAVIGATION ----------------------- */
+/* Nav tab */
+.top-menu
+{
+    padding-top: 10px;
+    background-color:rgb(24, 24, 51);
+
+}
+.nav-header
+{
+    display: inline;
+}
+nav {
+    text-align: center;
+}
+nav li {
+    text-align: center;
+    display: inline;
+}
+nav ul {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+nav a {
+    text-decoration: none;
+    margin: 2.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800; 
+    font-size: .8rem;
+}
+a{
+
+    color: rgb(255, 255, 255);
+
+}
+a:hover {
+    color: goldenrod;
+}
+
+/* Footer */
+footer
+{
+    padding-left: 0px;
+    font-size: 13px;
+    background-color:rgb(24, 24, 51);
+    padding: 1rem;
+    color: white;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+ul.social
+{
+    margin: 0px;
+    padding: 0px;
+}
+ul.social img
+{
+    max-width: 12%;
+    margin: 0px;
+    padding: 5px;
+
+}
+ul.social li
+{
+    display: inline;
+}
+ul.social a
+{
+    text-decoration: none;
+}
+
+/* --------------- BUTTONS ----------------------- */
+.btn-primary
+{
+    font-size: 1.6rem;
+    margin-top: 5%;
+    box-shadow: 5px 5px grey;   
+}
+.btn-primary:hover
+{
+    border-color:rgb(24, 24, 51);
+    background-color:rgb(24, 24, 51);
+    color: goldenrod;
+}
+
+/* --------------- START ANIMATION ----------------------- */
+/* Waves */
+section {
+
+    position: relative;
+    width: auto;
+    height: 60vh;
+    background: url(http://20.54.76.35/~team11/images/blue_sea_header.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
+}
+section .wave {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    bottom: 0;
+    left: 0;
+    background: url(http://20.54.76.35/~team11/images/wave.png);
+    animation: animate 10s linear infinite;
+}
+section .wave::before {
+    content: '';
+    width: 100%;
+    height: 142px;
+    background: url(http://20.54.76.35/~team11/images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    animation-delay: -2.5s;
+    animation: animate 15s linear infinite;
+}
+section .wave::after {
+    content: '';
+    width: 100%;
+    height: 142px;
+    background: url(http://20.54.76.35/~team11/images/wave.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+
+/* bubbles*/
+.bubbles {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.bubble {
+    position: absolute;
+    bottom: 0;
+    background: rgb(230, 230, 231);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: flying 10s infinite ease-in
+}
+.bubble:nth-child(1){
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+}
+.bubble:nth-child(2){
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(3){
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(4){
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+.bubble:nth-child(5){
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(6){
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+.bubble:nth-child(7){
+    width: 25px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(8){
+    width: 18px;
+    height: 18px;
+    left: 28%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(9){
+    width: 15px;
+    height: 15px;
+    left: 85%;
+    animation-duration: 9s;
+    animation-delay: 0s;
+}
+.bubble:nth-child(10){
+    width: 50px;
+    height: 50px;
+    left: 85%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+@keyframes flying {
+    0%{
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        bottom: 1040px;
+        transform: translateX(-200px);
+    }
+}
+/* --------------- SCROLL BAR ----------------------- */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6b98bd), to(#2c1497));
+}
+::-webkit-scrollbar-track{
+    background: linear-gradient(to right, #ffffff, #ffffff 1px, #ffffff 1px, #ffffff)
+}
