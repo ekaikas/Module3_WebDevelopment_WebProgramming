@@ -126,6 +126,11 @@
 <!-- Task 7 -->
 <h2>Task 7</h2>
     <h3> Create a GitHub repo and enable GitHub pages for the repo. Upload an HTML file of yours to the repo. You should include in your PHP code the link to the repo and your web page. </h3>
-       
+       <p>This is the link to the github repository  named Module3_WebDevelopment_WebProgramming:<a href="https://ekaikas.github.io/Module3_WebDevelopment_WebProgramming/">
+             "https://ekaikas.github.io/Module3_WebDevelopment_WebProgramming/"</a> and by clicking on it you can be transfered to the web page.</p>
+            
+                                
+    
+                          
 </body>
 </html>
