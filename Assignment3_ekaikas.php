@@ -119,7 +119,20 @@
 <h2>Task 6</h2>
     <h3> Use While loop to print the following pattern: 
     <br><br> *<br>**<br>***<br>****<br>*****<br>******<br>*******<br>********</h3>        
-        
+    <?php
+                $i=0;
+                while($i<=7)
+                {  
+                    $j=$i+1;
+                    while($j>0)
+                    {
+                        echo "* ";
+                        $j--;      
+                    }
+                echo "<br>";
+                $i++;
+                }
+    ?>   
        
     <!----- GitHub ----->
 
